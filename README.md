@@ -46,7 +46,7 @@ In QGIS maps, the value shown is the most recent value of the acceleration curve
 
 ## Sources
 
-### Data
+### COVID-19 data
 
 * World: [European Centre for Disease Prevention and Control](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) (ECDC)
 * France: [Santé publique France](https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/)
