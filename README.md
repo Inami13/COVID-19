@@ -41,5 +41,11 @@ In QGIS maps, the value shown is the most recent value of the acceleration curve
 
 ## Authors
 
-* **[Ivan Deiros](https://github.com/Inami13)** - *Initial work* - [Inami13](https://github.com/Inami13)
-* **[Oscar Argudo](https://github.com/oargudo)** - *MACD idea and code* - [oargudo](https://github.com/oargudo)
+* **[Ivan Deiros](https://github.com/Inami13)** - *Initial work*
+* **[Oscar Argudo](https://github.com/oargudo)** - *MACD idea and code*
+
+## Sources
+
+* World: [European Centre for Disease Prevention and Control](https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide) (ECDC)
+* France: [Santé publique France](https://www.data.gouv.fr/fr/datasets/donnees-hospitalieres-relatives-a-lepidemie-de-covid-19/)
+* Spain: [Ministerio de Sanidad](https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov-China/situacionActual.htm) (Gobierno de España)
