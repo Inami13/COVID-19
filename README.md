@@ -42,7 +42,7 @@ In QGIS maps, the value shown is the most recent value of the acceleration curve
 ## Authors
 
 * **[Ivan Deiros](https://github.com/Inami13)** - *Initial work*
-* **[Oscar Argudo](https://github.com/oargudo)** - *MACD idea and code*
+* **[Oscar Argudo](https://github.com/oargudo)** - *Code for MACD computation and plots*
 
 ## Sources
 
