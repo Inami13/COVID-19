@@ -23,7 +23,7 @@ Worldmetrics shows the current top 10 countries in terms of:
  * Deaths
  * Deaths normalized by population
  
-Some plots show the chronological evolution of the disease for the top 10 countries. New cases and deaths are smoothed using an Exponential Moving Average (EMA) of 14 days, i.e. the maximum incubation time of the COVID-19.
+Some plots show the chronological evolution of the disease for the top 10 countries. New cases and deaths are smoothed using an Exponential Moving Average ([EMA](https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average)) of 14 days, i.e. the maximum incubation time of the COVID-19.
 
 CountryMACD shows the situation for a specific country. Country names should be given using underscore for the spaces (e.g. United_States_of_America).
 
