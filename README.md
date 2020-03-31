@@ -2,6 +2,8 @@
 
 Data visualization, using Python and QGIS, of the evolution of the COVID-19 at different scales and detail depending on the data provided by the official sources. Three different studies have been made for France, Spain and the world.
 
+A folder is provided (**Maps & Plots**) with some results and infographies of the situation of the COVID-19 by the end of March, as an example of which information can be retrieved from this repository.
+
 ## QGIS
 
 In order to display data in maps, QGIS is required along with the provided vectorial layers of administrative divisions. Most of ShapeFile layers provided in this repository need to be unzipped before usage. The Spain project uses an extra layer that is not included due to size issues, but it can be downloaded from the following [link](http://opendata.esri.es/datasets/poblaci%C3%B3n-total-por-municipios-padr%C3%B3n-2015) or discarded since it is not essential for COVID-19 understanding (it just adds extra information of municipalities by population density).
