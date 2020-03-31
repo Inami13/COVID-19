@@ -4,7 +4,7 @@ Data visualization, using Python and QGIS, of the evolution of the COVID-19 at d
 
 ## QGIS
 
-In order to display data in maps, QGIS is required along with the provided vectorial layers of administrative divisions. Most of ShapeFile layers provided in this repository need to be unzipped before usage. The Spain project uses an extra layer that is not included due to size issues, but in can be downloaded from the following [link](http://opendata.esri.es/datasets/poblaci%C3%B3n-total-por-municipios-padr%C3%B3n-2015).
+In order to display data in maps, QGIS is required along with the provided vectorial layers of administrative divisions. Most of ShapeFile layers provided in this repository need to be unzipped before usage. The Spain project uses an extra layer that is not included due to size issues, but it can be downloaded from the following [link](http://opendata.esri.es/datasets/poblaci%C3%B3n-total-por-municipios-padr%C3%B3n-2015) or discarded since it is not essential for COVID-19 understanding (it just adds extra information of municipalities by population density).
 
 A Python script is provided with each of the QGIS projects and should be run in the built-in Python console after openning the project. The script will automatically download the latest available data and update the attribute table of the layers.
 
