@@ -14,7 +14,7 @@ Some map infographies are provided as examples. See **About the acceleration** f
 
 ## Python script
 
-For the world data, a Python notebook *COVID19_WorldStatistics.ipynb* is also provided, which is independant from the QGIS project. This script downloads the last updated data from the European Centre for Disease Prevention and Control and two different built-in functions provide statistics of the COVID-19.
+For the world data, a Python notebook (**COVID19_WorldStatistics.ipynb**) is also provided, which is independant from the QGIS project. This script downloads the last updated data from the European Centre for Disease Prevention and Control and two different built-in functions provide statistics of the COVID-19.
 
 Worldmetrics shows the current top 10 countries in terms of:
 
