@@ -33,7 +33,7 @@ CountryMACD shows the situation for a specific country. Country names should be 
 
 In order to visualize the acceleration or deceleration of new cases and deaths, an innovative idea of using trading indicators to follow the trends has been implemented. 
 
-The Moving Average Convergence Divergence ([MACD](https://en.wikipedia.org/wiki/MACD)), commonly used to in technical analysis of stock prices, has been chosen. This indicator compares the EMA for two different time periods (usually 12 and 26 days). A Signal Line is the performed applying an EMA of a shorter time to the MACD (usually 9 day-period). The difference between the MACD and the Signal Line gives an idea of the acceleration of the price.
+The Moving Average Convergence Divergence ([MACD](https://en.wikipedia.org/wiki/MACD)), commonly used in technical analysis of stock prices, has been chosen. This indicator compares the EMA for two different time periods (usually 12 and 26 days). A Signal Line is the performed applying an EMA of a shorter time to the MACD (usually 9 day-period). The difference between the MACD and the Signal Line gives an idea of the acceleration of the price.
 
 For this project, in order to be more representative of the disease, periods of 14 and 21 days have been chosen as default values (still 9 days for the Signal Line). Nevertheless, results do not change significantly by using these new values compared to the classical ones. Anyway, the code has been left open to experiment with different values as you wish.
 
