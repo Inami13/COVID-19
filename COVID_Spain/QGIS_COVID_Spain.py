@@ -2,8 +2,8 @@ import pandas as pd
 
 df = pd.read_csv('https://covid19.isciii.es/resources/serie_historica_acumulados.csv',delimiter=',',encoding = 'unicode_escape')
 
-df['Fecha']= pd.to_datetime(df['Fecha'], dayfirst = True)
-df = df.sort_values(['CCAA Codigo ISO', 'Fecha'])
+df['FECHA']= pd.to_datetime(df['FECHA'], dayfirst = True)
+df = df.sort_values(['CCAA', 'FECHA'])
 
 def computeMACD(values, short, long, lag):
     macd   = computeEMA(values, short) - computeEMA(values, long)
@@ -24,8 +24,8 @@ for feature in features:
     ID = str(feature['Codigo'])
     Pop = float(feature['Población'])
     
-    Casos = df[df['CCAA Codigo ISO'] == ID]['Casos '].fillna(0)
-    Fallecidos = df[df['CCAA Codigo ISO'] == ID]['Fallecidos'].fillna(0)
+    Casos = df[df['CCAA'] == ID]['CASOS'].fillna(0)
+    Fallecidos = df[df['CCAA'] == ID]['Fallecidos'].fillna(0)
     
     layer.changeAttributeValue(feature.id(), 3, int(Casos.iloc[-1]))    
     layer.changeAttributeValue(feature.id(), 4, float(Casos.iloc[-1]/Pop*100000))
@@ -47,4 +47,4 @@ for feature in features:
 
 layer.commitChanges()
 
-print('\nFecha de actualización de los datos: %s'%(df.groupby('Fecha').any().index[-1]))
+print('\nFecha de actualización de los datos: %s'%(df.groupby('FECHA').any().index[-1]))
