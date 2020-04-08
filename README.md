@@ -35,7 +35,9 @@ The plots extracted from this script can also be consulted in the folder [Plots 
 
 ### France & Spain
 
-Two files (**COVID19_Spain.ipynb** & **COVID19_France.ipynb**) are provided that add extra information for France and Spain at a national and regional level. These two script plot the chronological curve of active cases, recovered and deaths in the form of a stack plot. Some examples of these plots are also provided in the folder [Plots script](https://github.com/Inami13/COVID-19/tree/master/Maps%20%26%20Plots/Plots%20script).
+Two Python notebooks (**COVID19_Spain.ipynb** & **COVID19_France.ipynb**) are provided adding extra information for France and Spain at a national and regional level. 
+
+These two scripts plot the chronological curve of active cases, recovered patients and deaths in the form of a stack plot. Some examples of these plots are also provided in the folder [Plots script](https://github.com/Inami13/COVID-19/tree/master/Maps%20%26%20Plots/Plots%20script).
 
 ## About the acceleration
 
