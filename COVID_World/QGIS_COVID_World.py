@@ -1,22 +1,16 @@
 import pandas as pd
 from datetime import date, timedelta
 
-day = date.today()
+
 try:
-    url = "https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-%s.xlsx"%day.strftime("%Y-%m-%d")
+    url = "https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide.xlsx"
     df = pd.read_excel(url)
 except:
-    day = date.today() - timedelta(days=1)
-    try:
-        url = "https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-%s.xlsx"%day.strftime("%Y-%m-%d")
-        df = pd.read_excel(url)
-    except:
-        day = date.today() - timedelta(days=2)
-        try:
-            url = "https://www.ecdc.europa.eu/sites/default/files/documents/COVID-19-geographic-disbtribution-worldwide-%s.xlsx"%day.strftime("%Y-%m-%d")
-            df = pd.read_excel(url)
-        except:
-            raise SystemExit("\nNo reports in the last two days.\n")
+    raise SystemExit("\nImpossible to retrieve data. The ECDC server may be down.\n")
+
+
+day = df.groupby('dateRep').any().index[-1]
+day = day - timedelta(days=1)
 
 df = df.rename(columns = {'dateRep':'DateRep','cases':'Cases','deaths':'Deaths','countriesAndTerritories':'Countries and territories','geoId':'GeoId'}) 
 
@@ -69,7 +63,6 @@ for feature in features:
         
 layer.commitChanges()
 
-day = day - timedelta(days=1)
 print('Last updated data:\t%s' %day.strftime("%d-%m-%Y"))
     
 
