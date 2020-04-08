@@ -14,7 +14,9 @@ A rescaling of the colorbars could be necessary in order to correctly visualize 
 
 Some map infographies are provided as examples. See **About the acceleration** for more information about the method followed for the computation of the acceleration.
 
-## Python script
+## Python scripts
+
+### World
 
 For the world data, a Python notebook (**COVID19_WorldStatistics.ipynb**) is also provided, which is independant from the QGIS project. This script downloads the last updated data from the European Centre for Disease Prevention and Control and two different built-in functions provide statistics of the COVID-19.
 
@@ -28,6 +30,14 @@ Worldmetrics shows the current top 10 countries in terms of:
 Some plots show the chronological evolution of the disease for the top 10 countries. New cases and deaths are smoothed using an Exponential Moving Average ([EMA](https://en.wikipedia.org/wiki/Moving_average#Exponential_moving_average)) of 14 days, i.e. the maximum incubation time of the COVID-19.
 
 CountryMACD shows the situation for a specific country. Country names should be given using underscore for the spaces (e.g. United_States_of_America).
+
+The plots extracted from this script can also be consulted in the folder [Plots script](https://github.com/Inami13/COVID-19/tree/master/Maps%20%26%20Plots/Plots%20script).
+
+### France & Spain
+
+Two Python notebooks (**COVID19_Spain.ipynb** & **COVID19_France.ipynb**) are provided adding extra information for France and Spain at a national and regional level. 
+
+These two scripts plot the chronological curve of active cases, recovered patients and deaths in the form of a stack plot. Some examples of these plots are also provided in the folder [Plots script](https://github.com/Inami13/COVID-19/tree/master/Maps%20%26%20Plots/Plots%20script).
 
 ## About the acceleration
 
